@@ -71,4 +71,14 @@ add_executable(guidanceNodeCalibration
   src/GuidanceNodeCalibration.cpp
   src/DJI_utility.cpp)
 
+install (TARGETS ${PROJECT_NAME}
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install (DIRECTORY include/
+  DESTINATION ${CATKIN_GLOBAL_INCLUDE_DESTINATION}
+  PATTERN ".svn" EXCLUDE
+)
 #  vim: set et fenc=utf-8 ff=unix sts=0 sw=2 ts=2 :
