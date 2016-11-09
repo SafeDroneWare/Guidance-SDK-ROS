@@ -10,9 +10,6 @@ find_package(catkin REQUIRED COMPONENTS
 )
 find_package(OpenCV 2 REQUIRED core highgui)
 
-catkin_package(
-)
-
 include_directories(
   ${OpenCV_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS}
